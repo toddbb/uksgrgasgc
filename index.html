@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="img/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="img/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/strap.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    
+</head>
+<body>
+
+    <header class="header flex-row max-w">
+        <div class="header-left">            
+            <div class="flex-row page-buttons">
+                <div class="page-btn btn page-btn-active" id="view-chart">
+                    <span class="material-icons md-36">bar_chart</span>
+                </div>
+                <div class="page-btn btn" id="view-table">
+                    <span class="material-icons md-36">table_view</span>
+                </div>
+                <div class="page-btn btn" id="view-comments">
+                    <span class="material-icons md-36">comment</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="header-center-top">
+                <span id="header-studentName" class="fnt-lg">Vinh Chi Truong</span>
+                <span id="header-studentNickname" class="fnt-lg">(Vincent)</span>
+            </div>
+            <div class="header-center-bottom flex-row">
+                <div class="nav-btn btn nav-btn-left fnt-md active" id="view-preCourse">Pre-Course</div>                
+                <div class="nav-btn btn fnt-md" id="view-midCourse">Mid-Course</div>                
+                <div class="nav-btn btn nav-btn-right fnt-md" id="view-endCourse">End-of-Course</div>
+            </div>
+        </div>
+        <div class="header-right flex-row">
+            <div id="header-level">
+                <span id="header-level-text" class="fnt-xl fnt-bold">J3A</span>
+            </div>
+            <div id="header-logo">
+                <img id="header-logo-img" src="img/SuperJuniors.png" width="150" height="125" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="main flex-row max-w">
+        <div class="main-left">
+            <div class="pageType chartView page-active">
+                <img src="img/mockup/example-precourse.jpg" alt="" class="mock-img mock-preCourse mock-chart chart-main mock-active" id="mock-chart-preCourse" height="425" width="750">
+                <img src="img/mockup/example-midcourse.jpg" alt="" class="mock-img mock-midCourse mock-chart chart-main" id="mock-chart-midCourse" height="425" width="750">
+                <img src="img/mockup/example-endcourse.jpg" alt="" class="mock-img mock-endCourse mock-chart chart-main" id="mock-chart-endCourse" height="425" width="750">
+            </div>
+            <div class="pageType tableView">
+                <img src="img/mockup/example-table-precourse.jpg" alt="" class="mock-img mock-preCourse mock-table table-main mock-active" id="mock-table-preCourse" height="425" width="750">
+                <img src="img/mockup/example-table-midcourse.jpg" alt="" class="mock-img mock-midCourse mock-table table-main" id="mock-table-midCourse" height="425" width="750">
+                <img src="img/mockup/example-table-endcourse.jpg" alt="" class="mock-img mock-endCourse mock-table table-main" id="mock-table-endCourse" height="425" width="750">
+            </div>
+            <div class="pageType commentsView">
+                <img src="img/mockup/example-comments-precourse.jpg" alt="" class="mock-img mock-preCourse mock-comment comment-main mock-active" id="mock-table-preCourse" height="425" width="750">
+                <img src="img/mockup/example-comments-midcourse.jpg" alt="" class="mock-img mock-midCourse mock-comment comment-main" id="mock-table-midCourse" height="425" width="750">
+                <img src="img/mockup/example-comments-endcourse.jpg" alt="" class="mock-img mock-endCourse mock-comment comment-main" id="mock-table-endCourse" height="425" width="750">
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="grid-metrics grid-metrics-oneRow">
+                <div class="metric-grid1">
+                    <div class="metric-title fnt-bold">HOMEWORK</div>
+                    <div class="metric-chart">
+                        <img src="img/mockup/example-donut.png" alt="" class="mock-metric-donut">
+                    </div>
+                    <div class="metric-subText">
+                        <span class="metric-percent" id="metric-percent-hw">90th Percentile</span>
+                    </div>
+                </div>
+                <div class="metric-grid2">
+                    <div class="metric-title fnt-bold">ATTENDANCE</div>
+                    <div class="metric-chart">
+                        <img src="img/mockup/example-donut.png" alt="" class="mock-metric-donut"></div>
+                    <div class="metric-subText">
+                        <span class="metric-percent" id="metric-percent-attend">85th Percentile</span></div>
+                </div>
+                <div class="metric-grid3">
+                    <div class="metric-title fnt-bold">TOTAL ACHIEVEMENT</div>
+                    <div class="metric-chart">
+                        <img src="img/mockup/example-donut.png" height="150" widt="150" alt="" class="mock-metric-donut"></div>
+                    <div class="metric-subText">
+                        <span class="metric-percent" id="metric-percent-total">90th Percentile</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
